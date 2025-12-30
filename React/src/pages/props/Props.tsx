@@ -1,4 +1,4 @@
-import { Heading } from "../../components";
+import { Divider, Heading } from "../../components";
 import {
   Array,
   Boolean,
@@ -54,13 +54,23 @@ export const Props = () => {
 
       <String title="This is a string prop example." />
 
+      <Divider/>
+
       <Number count={10} />
+
+      <Divider/>
 
       <Boolean isActive={true} />
 
+      <Divider/>
+
       <Array items={["Apple", "Banana", "Orange"]} />
 
+      <Divider/>
+
       <Object user={{ name: "User name", age: 54 }} />
+
+      <Divider/>
 
       <ReactNode
         content={
@@ -70,25 +80,43 @@ export const Props = () => {
         }
       />
 
+      <Divider/>
+
       <Children>
         <button>Click Me</button>
       </Children>
 
+      <Divider/>
+
       <OptionalString />
       <OptionalString title="Optional title" />
 
+      <Divider/>
+
       <OptionalDefault />
+
+      <Divider/>
 
       <Function label="Click me" onClick={() => alert("Button clicked")} />
 
+        <Divider/>
+
       <FunctionWithArgs onSelect={handleSelect} />
+
+      <Divider/>
 
       <Union id={123} />
       <Union id="ABC123" />
 
+      <Divider/>
+
       <SelectiveUnion variant="primary" />
 
+      <Divider/>
+
       <Enum status={Status.Active} />
+
+      <Divider/>
 
       <Generic items={["Apple", "Banana"]} renderItem={(item) => item} />
 

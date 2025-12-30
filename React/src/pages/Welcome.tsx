@@ -11,13 +11,19 @@ export const Welcome = () => {
       <div className="flex flex-col flex-wrap gap-4">
         <Link to="/props">
           <p className="no-underline hover:underline text-blue-800">
-            - Props Example
+            - props Example
           </p>
         </Link>
 
-        <Link to="/usestate">
+        <Link to="/hooks/usestate">
           <p className="no-underline hover:underline text-blue-800">
-            - UseState Example
+            - useState Example
+          </p>
+        </Link>
+
+        <Link to="/hooks/usereducer">
+          <p className="no-underline hover:underline text-blue-800">
+            - useReducer Example
           </p>
         </Link>
       </div>

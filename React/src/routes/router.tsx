@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import { PropsPage, UseState, Welcome } from "../pages";
+import { PropsPage, UseReducer, UseState, Welcome } from "../pages";
 
 export const router = createBrowserRouter([
   {
@@ -11,7 +11,11 @@ export const router = createBrowserRouter([
     element: <PropsPage />,
   },
   {
-    path: "/usestate",
+    path: "/hooks/usestate",
     element: <UseState />,
+  },
+  {
+    path: "/hooks/usereducer",
+    element: <UseReducer />,
   },
 ]);

@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { Divider, Heading } from "../../components";
+import { Divider, Heading } from "../../../components";
 import {
   UseStateEx1,
   UseStateEx2,
   UseStateEx3,
-} from "../../components/useState";
+} from "../../../components/useState";
 
 export default function UseState() {
   return (
