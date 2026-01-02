@@ -21,3 +21,5 @@ export { Variant as SelectiveUnion } from "./SelectiveUnion";
 export { Enum } from "./Enums";
 // 
 export { Generic } from "./Generic";
+//
+export {default as ComponentType} from "./ComponentType";

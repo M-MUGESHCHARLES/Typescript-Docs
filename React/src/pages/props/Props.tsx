@@ -3,6 +3,7 @@ import {
   Array,
   Boolean,
   Children,
+  ComponentType,
   Enum,
   Function,
   FunctionWithArgs,
@@ -54,23 +55,23 @@ export const Props = () => {
 
       <String title="This is a string prop example." />
 
-      <Divider/>
+      <Divider />
 
       <Number count={10} />
 
-      <Divider/>
+      <Divider />
 
       <Boolean isActive={true} />
 
-      <Divider/>
+      <Divider />
 
       <Array items={["Apple", "Banana", "Orange"]} />
 
-      <Divider/>
+      <Divider />
 
       <Object user={{ name: "User name", age: 54 }} />
 
-      <Divider/>
+      <Divider />
 
       <ReactNode
         content={
@@ -80,54 +81,58 @@ export const Props = () => {
         }
       />
 
-      <Divider/>
+      <Divider />
+
+      <ComponentType displayString={true} component={OptionalString} />
+
+      <Divider />
 
       <Children>
         <button>Click Me</button>
       </Children>
 
-      <Divider/>
+      <Divider />
 
       <OptionalString />
       <OptionalString title="Optional title" />
 
-      <Divider/>
+      <Divider />
 
       <OptionalDefault />
 
-      <Divider/>
+      <Divider />
 
       <Function label="Click me" onClick={() => alert("Button clicked")} />
 
-        <Divider/>
+      <Divider />
 
       <FunctionWithArgs onSelect={handleSelect} />
 
-      <Divider/>
+      <Divider />
 
       <Union id={123} />
       <Union id="ABC123" />
 
-      <Divider/>
+      <Divider />
 
       <SelectiveUnion variant="primary" />
 
-      <Divider/>
+      <Divider />
 
       <Enum status={Status.Active} />
 
-      <Divider/>
+      <Divider />
 
-      <Generic items={["Apple", "Banana"]} renderItem={(item) => item} />
+      <Generic title='Fruits' items={["Apple", "Banana"]} renderItem={(item) => item} />
 
       <Generic
+        title='Products'
         items={[
           { id: 1, name: "Laptop" },
           { id: 2, name: "Phone" },
         ]}
         renderItem={(item) => item.name}
       />
-
     </div>
   );
 };
